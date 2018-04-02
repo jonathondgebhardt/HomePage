@@ -1,0 +1,104 @@
+<!doctype html>
+
+<!-- Amalgamation of pages found at https://startpages.github.io/ -->
+
+<html>
+	<head>
+		<title>home</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+	<main>
+            <h1 id="date"></h1>
+            <hr>
+            <ul>
+                <li>General</li>
+            <li><a href="https://www.reddit.com/">Reddit</a></li>
+	        <li><a href="http://www.4chan.org/">4Chan</a></li>
+	        <li><a href="https://feedly.com/i/my">Feedly</a></li>
+	        <li><a href="https://www.twitch.tv/directory/following">Twitch</a></li>
+	        <li><a href="https://www.youtube.com/">YouTube</a></li>
+	        <li><a href="https://www.dropbox.com/home">Dropbox</a></li>
+	        <li><a href="https://www.amazon.com/">Amazon</a></li>
+	        <li><a href="http://www.woot.com/">Woot</a></li>
+	        <li><a href="https://www.newegg.com/">NewEgg</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li>School</li>
+                <li><a href="https://pilot.wright.edu/login.asp">Pilot</a></li>
+                <li><a href="http://www.wright.edu/">Wright State University</a></li>
+                <li><a href="https://e5.onthehub.com/WebStore/Security/Signin.aspx?ws=a1c91d9a-f79b-e011-969d-0030487d8897&vsro=8&action=signout">Microsoft Dreamspark</a></li>
+		        <li><a href="http://www.slader.com/textbook/9780321982384-linear-algebra-and-its-applications-5th-edition/">Slader</a></li>
+		
+            </ul>
+            <hr>
+            <ul>
+              <li>Programming</li>
+                <li><a href="https://github.com/">Github</a></li>
+	            <li><a href="http://codingbat.com/java">Codingbat</a></li>
+                <li><a href="https://projecteuler.net/sign_in">Project Euler</a></li>
+                <li><a href="https://www.hackerrank.com/login">HackerRank</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li>Google</li>
+                <li><a href="https://fi.google.com/account">Project Fi</a></li>
+                <li><a href="https://drive.google.com/drive/my-drive">Drive</a></li>
+                <li><a href="https://play.google.com/music/listen#/home">Play Music</a></li>
+                <li><a href="https://hangouts.google.com/">Hangouts</a></li>
+                <li><a href="https://calendar.google.com/calendar/r">Calendar</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li>Money</li>
+                <li><a href="https://www.usaa.com/inet/ent_logon/Logon">USAA</a></li>
+                <li><a href="https://www.paypal.com/us/home">PayPal</a></li>
+		<li><a href="https://bby-wfmr.jdadelivers.com/retail/rp/login?redirectUrl=%2Fretail%2Frp">B3 ESS</a></li>
+		<li><a href="https://ari.managebuilding.com/Resident/PublicPages/Home.aspx?ReturnUrl=%2fResident%2fdefault.aspx">Channingway</a></li>
+		<li><a href="https://www.spectrum.net/login/?ReferringPartner=TWC">Spectrum</a></li>
+            </ul>
+		</main>
+
+<!-- Code for date -->
+        <script>
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            var n = weekday[d.getDay()];
+            var yyyy = today.getFullYear();
+
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+
+            today = dd + '.' + mm + '.' + yyyy;
+
+            date.innerHTML = n + "<br>" + today;
+        </script>
+
+
+
+	</body>
+</html>
+
+
+
